@@ -1,13 +1,16 @@
 <script setup>
-import AppHeader from './components/appHeader.vue'
+import TheHeader from './components/TheHeader.vue'
+import RunningLine from './components/RunningLine.vue'
 </script>
 
 <template>
-  <header>
-    <AppHeader />
-  </header>
+  <TheHeader />
+  <RunningLine />
 
-  <main></main>
+  <main>
+    <!-- <TheWelcome /> -->
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
