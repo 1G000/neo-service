@@ -7,6 +7,6 @@ export default {
     { key: 4, value: 'Отзывы' },
     { key: 5, value: "Контакты" }
   ],
-  telephone: '+7(981)841-21-08'
+  telephone: '+7 (981) 841-21-08'
 }
 

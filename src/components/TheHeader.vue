@@ -12,7 +12,7 @@ const data = ref(headerData)
 <template>
   <header class="header">
     <UiContainer class="header__wrapper">
-      <a href="/"><img src="../assets/logo.png" alt="logo" /></a>
+      <UiButton href="/"><img src="../assets/logo.png" alt="logo" /></UiButton>
       <div class="desktop-nav">
         <NavigationList class="navigation" :navigationList="data.navigation" />
         <a class="header__button" :href="'tel:' + data.telephone">{{
@@ -33,7 +33,7 @@ const data = ref(headerData)
 <style scoped>
 .header {
   height: 108px;
-  background-color: #1b1f26f0;
+  background-color: #131313b2;
   margin: 0 auto;
 }
 .desktop-nav {
@@ -80,7 +80,7 @@ const data = ref(headerData)
 .navigation {
   display: flex;
   flex-direction: row;
-  gap: 46px;
+  gap: 43px;
 }
 @media (max-width: 1100px) {
   .navigation {
@@ -108,7 +108,6 @@ const data = ref(headerData)
   color: #ffffff;
   font-weight: 300;
   line-height: 20px;
-  letter-spacing: -0.38px;
   /* box-shadow: 0px 4px 4px 0px #00000040; */
   transition: 0.3s;
 }

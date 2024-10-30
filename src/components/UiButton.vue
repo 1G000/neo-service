@@ -1,12 +1,6 @@
 <script setup>
-// defineProps({
-//   text: {
-//     type: String,
-//     required: false,
-//   },
-// })
 </script>
 
 <template>
-  <button><slot /></button>
+  <a><slot /></a>
 </template>
