@@ -65,6 +65,7 @@ const data = ref(headerData)
   border: 1px solid #ffac12;
   border-top-right-radius: 32px;
   border-bottom-left-radius: 32px;
+  border-top-right-radius: 32px;
   font-weight: 300;
   font-size: 18px;
   text-decoration: none;
@@ -73,7 +74,8 @@ const data = ref(headerData)
 }
 @media (hover: hover) {
   .header__button:hover {
-    background-color: #ffac12;
+    background-color: #2b2d2e;
+    color: #ffac12;
   }
 }
 
