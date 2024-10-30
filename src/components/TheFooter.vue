@@ -1,5 +1,6 @@
 <script setup>
 import UiContainer from './UiContainer.vue'
+import UiHint from './UiHint.vue'
 </script>
 
 <template>
@@ -31,15 +32,16 @@ import UiContainer from './UiContainer.vue'
         </div>
         <div class="footer__phone-number">+7 (981) 841-21-08</div>
         <div class="footer__right-side">
-          <div class="footer__btn-container">
+          <!-- <div class="footer__btn-container">
             <button class="footer__btn">
               <img src="/src/assets/XMLID_468_.png" alt="" />
               <span class="footer__btn-textcontent">WhatsApp</span></button
             ><button class="footer__btn">
               <img src="/src/assets/Layer2.png" alt="" />
               <span class="footer__btn-textcontent">Написать</span>
-            </button>
-          </div>
+            </button> </div> -->
+          <UiHint />
+
           <h3 class="footer__title">
             Ваша машина
             <span class="footer__title-accent">в надежных руках</span>
@@ -52,7 +54,8 @@ import UiContainer from './UiContainer.vue'
 
 <style scoped>
 .footer {
-  background-color: #1b1f26f0;
+  background-color: #131313;
+  min-height: 100vh;
 }
 .footer__wrapper {
   max-width: 1440px;
@@ -70,11 +73,6 @@ import UiContainer from './UiContainer.vue'
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-
-.logo {
-  width: 160px;
-  height: 183;
 }
 
 .footer__phone-number {

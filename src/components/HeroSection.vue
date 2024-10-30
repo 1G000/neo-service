@@ -43,12 +43,13 @@ import UiHint from './UiHint.vue'
   border-bottom-left-radius: 32px;
   margin-bottom: 187px;
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 @media (hover: hover) {
   .hero__button:hover {
-    background-color: transparent;
-    border: 1px solid #fcad1b;
+    background-color: #2b2d2e;
+    color: #ffac12;
+    border: 1px solid #ffac12;
   }
 }
 </style>
