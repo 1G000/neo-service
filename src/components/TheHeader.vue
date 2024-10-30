@@ -4,6 +4,7 @@ import NavigationList from './NavigationList.vue'
 import headerData from '@/assets/data/headerData.js'
 import UiContainer from './UiContainer.vue'
 import UiButton from './UiButton.vue'
+// import MobileBurger from './MobileBurger.vue'
 
 const data = ref(headerData)
 </script>
@@ -12,48 +13,121 @@ const data = ref(headerData)
   <header class="header">
     <UiContainer class="header__wrapper">
       <a href="/"><img src="../assets/logo.png" alt="logo" /></a>
-      <NavigationList
-        class="navigation"
-        :navigationList="data.navigation"
-        :itemStyle="{ color: 'white' }"
-      />
-      <UiButton class="header__button" :text="data.telephone" />
+      <div class="desktop-nav">
+        <NavigationList class="navigation" :navigationList="data.navigation" />
+        <a class="header__button" :href="'tel:' + data.telephone">{{
+          data.telephone
+        }}</a>
+      </div>
+      <!-- <MobileBurger /> -->
+      <UiContainer class="navigation-mobile__wrapper">
+        <NavigationList
+          class="navigation-mobile"
+          :navigationList="data.navigation"
+        />
+      </UiContainer>
     </UiContainer>
   </header>
 </template>
 
 <style scoped>
 .header {
-  height: 80px;
+  height: 108px;
   background-color: #1b1f26f0;
+  margin: 0 auto;
+}
+.desktop-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  align-items: center;
 }
 .header__wrapper {
+  position: relative;
   max-width: 1440px;
-  padding: 10px 80px;
+  padding: 22px 100px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .header__button {
-  padding: 5px 20px;
-  color: #000000;
-  font-size: 36px;
-  background-color: #fcad1b;
-  border: none;
-  border-top-right-radius: 24px;
-  border-bottom-left-radius: 24px;
-  font-family: 'Jockey One', sans-serif;
-  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 60px;
+  line-height: 22.32px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffac12;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: none;
   transition: 0.5s;
   cursor: pointer;
 }
-.header__button:hover {
-  color: #ffffff;
+@media (hover: hover) {
+  .header__button:hover {
+    background-color: #ffac12;
+  }
 }
+
 .navigation {
   display: flex;
   flex-direction: row;
-  gap: 36px;
+  gap: 46px;
+}
+@media (max-width: 1100px) {
+  .navigation {
+    display: none;
+  }
+}
+.navigation-mobile__wrapper {
+  display: none;
+  /* position: absolute;
+  padding: 30px 60px;
+  background-color: #1b1f26f0;
+  top: 90px;
+  right: -231px;
+  z-index: 1; */
+}
+.navigation-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+:deep(.navigation-item) {
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.38px;
+  /* box-shadow: 0px 4px 4px 0px #00000040; */
+  transition: 0.3s;
+}
+
+:deep(.navigation-item):after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff4d, #fff, #ffffff4d);
+  content: '';
+  transition: width 0.3s ease-out;
+}
+
+:deep(.navigation-item):hover:after,
+:deep(.navigation-item):focus:after {
+  width: 95%;
 }
 </style>
