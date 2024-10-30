@@ -15,7 +15,7 @@ import UiContainer from './UiContainer.vue'
           style="color: #eee; font-size: 12px; position: absolute; top: 14px"
           >Чугунная улица, 14Ж — Яндекс Карты</a
         ><iframe
-          src="https://yandex.ru/map-widget/v1/?ll=30.363640%2C59.976011&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjE0NjU3MzE5Ek7QoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQp9GD0LPRg9C90L3QsNGPINGD0LvQuNGG0LAsIDE00JYiCg266PJBFXDnb0I%2C&z=17"
+          src="https://yandex.ru/map-widget/v1/?ll=30.363640%2C59.976011&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjE0NjU3MzE5Ek7QoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQp9GD0LPRg9C90L3QsNGPINGD0LvQuNGG0LAsIDE00JYiCg266PJBFXDnb0I%2C&z=17&theme=dark"
           width="100%"
           height="400px"
           frameborder="1"
@@ -57,6 +57,8 @@ import UiContainer from './UiContainer.vue'
 .footer__wrapper {
   max-width: 1440px;
   padding: 10px 80px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,9 +78,7 @@ import UiContainer from './UiContainer.vue'
 }
 
 .footer__phone-number {
-  font-family:
-    Jockey One,
-    serif;
+  font-family: Jockey One, serif;
   color: white;
   font-weight: 400;
   font-size: 64px;

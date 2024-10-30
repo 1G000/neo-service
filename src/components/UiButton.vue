@@ -1,12 +1,12 @@
 <script setup>
-defineProps({
-  text: {
-    type: String,
-    required: false,
-  },
-})
+// defineProps({
+//   text: {
+//     type: String,
+//     required: false,
+//   },
+// })
 </script>
 
 <template>
-  <button>{{ text }}</button>
+  <button><slot /></button>
 </template>

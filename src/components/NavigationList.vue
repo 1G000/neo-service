@@ -10,7 +10,7 @@ defineProps({
 <template>
   <ul>
     <li v-for="item in navigationList" :key="item.key">
-      <a :href="`#${item.value}`"> {{ item.value }}</a>
+      <a :href="`#${item.value}`" class="navigation-item"> {{ item.value }}</a>
     </li>
   </ul>
 </template>
