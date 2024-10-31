@@ -31,10 +31,9 @@ import hintData from '@/assets/data/hintData'
   align-items: center;
   gap: 48px;
   padding: 40px 0;
-  background-color: #121212b2;
+  background-color: #131313;
   border-top-right-radius: 24px;
   border-top-left-radius: 24px;
-  /* justify-self: center; */
 }
 .hint__button {
   display: flex;
