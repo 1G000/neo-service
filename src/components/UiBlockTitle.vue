@@ -25,7 +25,7 @@ defineProps({
   display: flex;
   flex-direction: column;
   gap: 17px;
-  width: v-bind(width);
+  max-width: v-bind(width);
   align-items: center;
 }
 .block__title {

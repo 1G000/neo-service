@@ -39,7 +39,7 @@ const data = ref(headerData)
 .desktop-nav {
   display: flex;
   flex-direction: row;
-  gap: 90px;
+  gap: 40px;
   align-items: center;
 }
 .header__wrapper {
@@ -110,7 +110,6 @@ const data = ref(headerData)
   color: #ffffff;
   font-weight: 300;
   line-height: 20px;
-  /* box-shadow: 0px 4px 4px 0px #00000040; */
   transition: 0.3s;
 }
 
@@ -118,11 +117,16 @@ const data = ref(headerData)
   display: block;
   position: absolute;
   left: 50%;
-  bottom: -4px;
+  bottom: -8px;
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #ffffff4d, #fff, #ffffff4d);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    #fff 50%,
+    rgba(255, 255, 255, 0.1)
+  );
   content: '';
   transition: width 0.3s ease-out;
 }

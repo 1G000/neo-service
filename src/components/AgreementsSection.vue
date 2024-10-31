@@ -2,107 +2,99 @@
 import UiBlockTitle from './UiBlockTitle.vue'
 import UiContainer from './UiContainer.vue'
 import UiButton from './UiButton.vue'
-import aboutData from '@/assets/data/aboutData'
+import agreementsData from '@/assets/data/agreementsData'
 </script>
 
 <template>
-  <UiContainer class="about">
-    <UiContainer class="about__title">
-      <UiBlockTitle :width="'169px'" :title="'О нас'" />
+  <UiContainer class="agreements">
+    <UiContainer class="agreements__title">
+      <UiBlockTitle :width="'586px'" :title="'Оформление договора'" />
     </UiContainer>
-    <UiContainer class="about__content">
-      <UiContainer class="about__content-left" />
-      <UiContainer class="about__content-right">
-        <h4 class="about__content-title">{{ aboutData.about.title }}</h4>
+    <UiContainer class="agreements__content">
+      <UiContainer class="agreements__content-left">
         <p
-          v-for="text in aboutData.about.texts"
+          v-for="text in agreementsData.agreements.texts"
           :key="text.key"
-          class="about__content-text"
+          class="agreements__content-text"
           v-html="text.text"
         ></p>
-        <UiButton class="about__button">{{
-          aboutData.about.buttonText
+        <UiButton class="agreements__button">{{
+          agreementsData.agreements.buttonText
         }}</UiButton>
       </UiContainer>
-      <UiContainer class="about__content-background" />
+      <UiContainer class="agreements__content-right" />
+
+      <UiContainer class="agreements__content-background" />
     </UiContainer>
   </UiContainer>
 </template>
 
 <style scoped>
-.about {
+.agreements {
   height: 100%;
   /* min-height: 100vh; */
-  padding-top: 64px;
-  padding-bottom: 64px;
   scroll-snap-align: start;
 }
-.about__title {
+
+.agreements__title {
   max-width: 1440px;
-  padding-left: 100px;
-  padding-right: 100px;
-  /* padding: 64px 100px 0px 100px; */
+  padding: 64px 100px 18px 100px;
   margin-left: auto;
   margin-right: auto;
 }
-.about__content {
+.agreements__content {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 74px;
+  justify-content: space-between;
+  padding-top: 84px;
   gap: 100px;
   position: relative;
   z-index: 1;
 }
-.about__content-left {
-  background-image: url('@/assets/about-img.jpg');
+.agreements__content-right {
+  background-image: url('@/assets/agreements-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 46%;
-  height: 520px;
+  width: 44%;
+  height: 481px;
 }
 
-.about__content-right {
-  width: 33%;
+.agreements__content-left {
+  padding-left: 150px;
+  width: 44%;
   display: flex;
   flex-direction: column;
-  margin-top: -6px;
 }
-.about__content-background {
+.agreements__content-background {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 1px;
   z-index: -1;
   background-color: #ffffff;
   width: 66%;
-  height: 111%;
+  height: 114%;
 }
-.about__content-title {
+.agreements__content-title {
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: -0.4px;
   margin-bottom: 19px;
 }
-.about__special {
-  font-weight: 700;
-}
-.about__content-text {
+.agreements__content-text {
   font-size: 14px;
   font-weight: 300;
-  letter-spacing: -0.4px;
-  text-align: left;
   line-height: 32px;
-  margin-bottom: 6px;
+  margin-bottom: 24px;
 }
-.about__button {
-  margin-top: 37px;
+.agreements__button {
   display: flex;
   justify-content: center;
-  width: 111%;
+  width: 113%;
   padding: 30px 0px;
   background-color: #ffac12;
   font-size: 16px;
@@ -114,7 +106,7 @@ import aboutData from '@/assets/data/aboutData'
   transition: 0.5s;
 }
 @media (hover: hover) {
-  .about__button:hover {
+  .agreements__button:hover {
     background-color: #2b2d2e;
     color: #ffac12;
   }
