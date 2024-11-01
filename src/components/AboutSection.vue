@@ -32,16 +32,15 @@ import aboutData from '@/assets/data/aboutData'
 <style scoped>
 .about {
   height: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 140px;
   scroll-snap-align: start;
 }
 .about__title {
   max-width: 1440px;
   padding-left: 100px;
   padding-right: 100px;
-  /* padding: 64px 100px 0px 100px; */
   margin-left: auto;
   margin-right: auto;
 }

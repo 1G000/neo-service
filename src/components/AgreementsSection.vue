@@ -31,14 +31,14 @@ import agreementsData from '@/assets/data/agreementsData'
 
 <style scoped>
 .agreements {
-  height: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   scroll-snap-align: start;
+  padding-bottom: 64px;
 }
 
 .agreements__title {
   max-width: 1440px;
-  padding: 64px 100px 18px 100px;
+  padding: 0px 100px 18px 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,6 +46,7 @@ import agreementsData from '@/assets/data/agreementsData'
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 161px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -94,7 +95,7 @@ import agreementsData from '@/assets/data/agreementsData'
 .agreements__button {
   display: flex;
   justify-content: center;
-  width: 113%;
+  width: 109%;
   padding: 30px 0px;
   background-color: #ffac12;
   font-size: 16px;

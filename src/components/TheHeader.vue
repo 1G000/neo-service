@@ -14,7 +14,7 @@ const data = ref(headerData)
     <UiContainer class="header__wrapper">
       <UiButton href="/"><img src="../assets/logo.png" alt="logo" /></UiButton>
       <div class="desktop-nav">
-        <NavigationList class="navigation" :navigationList="data.navigation" />
+        <NavigationList class="navigation" :navigation-list="data.navigation" />
         <a class="header__button" :href="'tel:' + data.telephone">{{
           data.telephone
         }}</a>
@@ -23,7 +23,7 @@ const data = ref(headerData)
       <UiContainer class="navigation-mobile__wrapper">
         <NavigationList
           class="navigation-mobile"
-          :navigationList="data.navigation"
+          :navigation-list="data.navigation"
         />
       </UiContainer>
     </UiContainer>

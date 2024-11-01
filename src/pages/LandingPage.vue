@@ -3,6 +3,7 @@ import TheHeader from '@/components/TheHeader.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import AgreementsSection from '@/components/AgreementsSection.vue'
+import AdvantagesSection from '@/components/AdvantagesSection.vue'
 import TheFooter from '@/components/TheFooter.vue'
 </script>
 
@@ -14,6 +15,7 @@ import TheFooter from '@/components/TheFooter.vue'
   <main class="main">
     <AboutSection />
     <AgreementsSection />
+    <AdvantagesSection />
   </main>
   <TheFooter />
 </template>
@@ -25,7 +27,6 @@ import TheFooter from '@/components/TheFooter.vue'
   position: relative;
 }
 .main {
-  /* height: 100vh; */
   background-color: #131313;
   scroll-snap-type: y mandatory;
 }
