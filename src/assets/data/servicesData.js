@@ -26,15 +26,15 @@ export default {
       },
       {
         key: 1,
-        image: 'src/assets/repair-img.jpg',
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        buttonText: "Записаться на шиномонтаж"
+        image: 'src/assets/disc-img.jpg',
+        text: "Профессиональные услуги шиномонтажа для автомобилей всех типов. Автосервис NEO обеспечивает высокое качество обслуживания и использует современное оборудование, чтобы гарантировать безопасность и комфорт ваших поездок.",
+        buttonText: "Переобуться"
       },
       {
         key: 2,
-        image: 'src/assets/repair-img.jpg',
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        buttonText: "Записаться на замену масла"
+        image: 'src/assets/oil-img.jpg',
+        text: "Профессиональная услуга замены масла для автомобилей всех марок и моделей. Мы понимаем, как важно поддерживать Ваш автомобиль в отличном состоянии, и обеспечиваем высокое качество обслуживания с использованием только проверенных материалов.",
+        buttonText: "Заменить масло"
       }
     ]
   }

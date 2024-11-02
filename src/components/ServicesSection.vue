@@ -124,7 +124,6 @@ import servicesData from '@/assets/data/servicesData'
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.4px;
-  color: #2a292a;
   padding: 20px 0;
   border-bottom-left-radius: 32px;
   border-top-right-radius: 32px;
