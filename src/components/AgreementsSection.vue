@@ -8,7 +8,7 @@ import agreementsData from '@/assets/data/agreementsData'
 <template>
   <UiContainer class="agreements">
     <UiContainer class="agreements__title">
-      <UiBlockTitle :width="'586px'" :title="'Оформление договора'" />
+      <UiBlockTitle :width="'610px'" :title="'Оформление договора'" />
     </UiContainer>
     <UiContainer class="agreements__content">
       <UiContainer class="agreements__content-left">

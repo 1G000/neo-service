@@ -35,6 +35,7 @@ import advantagesData from '@/assets/data/advantagesData'
 .advantages {
   height: 100%;
   scroll-snap-align: start;
+  padding-bottom: 93px;
 }
 
 .advantages__title {

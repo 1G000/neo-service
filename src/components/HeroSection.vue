@@ -49,7 +49,6 @@ import UiHint from './UiHint.vue'
   .hero__button:hover {
     background-color: #2b2d2e;
     color: #ffac12;
-    /* border: 1px solid #ffac12; */
   }
 }
 </style>

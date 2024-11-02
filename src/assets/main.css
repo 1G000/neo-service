@@ -29,21 +29,20 @@ a {
   text-decoration: none;
 }
 
-/* @media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+button {
+  font-family: "Unbounded", sans-serif;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-} */
+::-webkit-scrollbar-track {
+  background-color: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffac12;
+  border-radius: 2px;
+}
