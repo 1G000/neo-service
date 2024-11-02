@@ -33,7 +33,7 @@ const data = ref(headerData)
 <style scoped>
 .header {
   height: 108px;
-  background-color: #131313b2;
+  background-color: #131313;
   margin: 0 auto;
 }
 .desktop-nav {
@@ -74,7 +74,7 @@ const data = ref(headerData)
 }
 @media (hover: hover) {
   .header__button:hover {
-    background-color: #2b2d2e;
+    /* background-color: #2b2d2e; */
     color: #ffac12;
   }
 }
@@ -134,5 +134,11 @@ const data = ref(headerData)
 :deep(.navigation-item):hover:after,
 :deep(.navigation-item):focus:after {
   width: 95%;
+}
+
+@media (hover: hover) {
+  :deep(.navigation-item):hover:after {
+    width: 95%;
+  }
 }
 </style>
