@@ -23,7 +23,6 @@ import UiContainer from './UiContainer.vue'
       </UiContainer>
     </form>
   </UiContainer>
-  <UiHint />
 </template>
 
 <style scoped>
