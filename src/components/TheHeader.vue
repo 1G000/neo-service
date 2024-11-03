@@ -1,12 +1,12 @@
 <script setup>
-import { ref } from 'vue'
-import NavigationList from './NavigationList.vue'
-import headerData from '@/assets/data/headerData.js'
-import UiContainer from './UiContainer.vue'
-import UiButton from './UiButton.vue'
+import { ref } from "vue";
+import NavigationList from "./NavigationList.vue";
+import headerData from "@/assets/data/headerData.js";
+import UiContainer from "./UiContainer.vue";
+import UiButton from "./UiButton.vue";
 // import MobileBurger from './MobileBurger.vue'
 
-const data = ref(headerData)
+const data = ref(headerData);
 </script>
 
 <template>
@@ -15,16 +15,11 @@ const data = ref(headerData)
       <UiButton href="/"><img src="../assets/logo.png" alt="logo" /></UiButton>
       <div class="desktop-nav">
         <NavigationList class="navigation" :navigation-list="data.navigation" />
-        <a class="header__button" :href="'tel:' + data.telephone">{{
-          data.telephone
-        }}</a>
+        <a class="header__button" :href="'tel:' + data.telephone">{{ data.telephone }}</a>
       </div>
       <!-- <MobileBurger /> -->
       <UiContainer class="navigation-mobile__wrapper">
-        <NavigationList
-          class="navigation-mobile"
-          :navigation-list="data.navigation"
-        />
+        <NavigationList class="navigation-mobile" :navigation-list="data.navigation" />
       </UiContainer>
     </UiContainer>
   </header>
@@ -65,7 +60,6 @@ const data = ref(headerData)
   border: 1px solid #ffac12;
   border-top-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  border-top-right-radius: 32px;
   font-weight: 300;
   font-size: 18px;
   text-decoration: none;
@@ -127,7 +121,7 @@ const data = ref(headerData)
     #fff 50%,
     rgba(255, 255, 255, 0.1)
   );
-  content: '';
+  content: "";
   transition: width 0.3s ease-out;
 }
 

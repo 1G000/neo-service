@@ -1,8 +1,8 @@
 <script setup>
-import UiBlockTitle from './UiBlockTitle.vue'
-import UiContainer from './UiContainer.vue'
-import UiButton from './UiButton.vue'
-import agreementsData from '@/assets/data/agreementsData'
+import UiBlockTitle from "./UiBlockTitle.vue";
+import UiContainer from "./UiContainer.vue";
+import UiButton from "./UiButton.vue";
+import agreementsData from "@/assets/data/agreementsData";
 </script>
 
 <template>
@@ -31,7 +31,7 @@ import agreementsData from '@/assets/data/agreementsData'
 
 <style scoped>
 .agreements {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   scroll-snap-align: start;
   padding-bottom: 64px;
 }
@@ -57,7 +57,7 @@ import agreementsData from '@/assets/data/agreementsData'
   z-index: 1;
 }
 .agreements__content-right {
-  background-image: url('@/assets/agreements-img.jpg');
+  background-image: url("@/assets/agreements-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 44%;

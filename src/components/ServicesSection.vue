@@ -1,8 +1,8 @@
 <script setup>
-import UiBlockTitle from './UiBlockTitle.vue'
-import UiContainer from './UiContainer.vue'
-import UiButton from './UiButton.vue'
-import servicesData from '@/assets/data/servicesData'
+import UiBlockTitle from "./UiBlockTitle.vue";
+import UiContainer from "./UiContainer.vue";
+import UiButton from "./UiButton.vue";
+import servicesData from "@/assets/data/servicesData";
 </script>
 
 <template>
@@ -39,7 +39,7 @@ import servicesData from '@/assets/data/servicesData'
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   scroll-snap-align: start;
   padding-bottom: 64px;
   display: flex;

@@ -33,7 +33,7 @@ import advantagesData from '@/assets/data/advantagesData'
 
 <style scoped>
 .advantages {
-  height: 100%;
+  /* height: 100%; */
   scroll-snap-align: start;
   padding-bottom: 93px;
 }

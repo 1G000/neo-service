@@ -15,7 +15,7 @@ import UiContainer from "./UiContainer.vue";
 
 <style scoped>
 .reviews {
-  height: 100%;
+  /* height: 100%; */
   scroll-snap-align: start;
 }
 

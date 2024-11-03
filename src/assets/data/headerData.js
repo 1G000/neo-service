@@ -4,7 +4,6 @@ export default {
     { key: 1, value: 'Договора' },
     { key: 2, value: 'Преимущества' },
     { key: 3, value: "Каталог" },
-    { key: 4, value: "Фото" },
     { key: 5, value: 'Отзывы' },
     { key: 6, value: "Контакты" }
   ],
