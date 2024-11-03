@@ -1,6 +1,6 @@
 <script setup>
-import formData from '@/assets/data/formData.js'
-import UiContainer from './UiContainer.vue'
+import formData from "@/assets/data/formData.js";
+import UiContainer from "./UiContainer.vue";
 </script>
 
 <template>
@@ -67,7 +67,7 @@ import UiContainer from './UiContainer.vue'
   border: none;
   border-radius: 8px;
   padding-left: 15px;
-  font-family: 'Unbounded', sans-serif;
+  font-family: "Unbounded", sans-serif;
 }
 
 .form__input-0::placeholder,
@@ -76,17 +76,17 @@ import UiContainer from './UiContainer.vue'
   background-position: 15px center;
   background-repeat: no-repeat;
   padding: 45px;
-  font-family: 'Unbounded', sans-serif;
+  font-family: "Unbounded", sans-serif;
   color: #7e868e;
 }
 .form__input-0::placeholder {
-  background-image: url('../assets/user.png');
+  background-image: url("../assets/user.png");
 }
 .form__input-1::placeholder {
-  background-image: url('../assets/phone.png');
+  background-image: url("../assets/phone.png");
 }
 .form__input-2::placeholder {
-  background-image: url('../assets/wrench.png');
+  background-image: url("../assets/wrench.png");
 }
 .form__inputs:focus,
 .form__inputs:active {
@@ -108,6 +108,7 @@ import UiContainer from './UiContainer.vue'
   border-bottom-left-radius: 32px;
   border-top-right-radius: 32px;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (hover: hover) {
   .form__button:hover {

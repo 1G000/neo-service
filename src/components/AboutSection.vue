@@ -32,7 +32,7 @@ import aboutData from '@/assets/data/aboutData'
 <style scoped>
 .about {
   height: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-top: 64px;
   padding-bottom: 140px;
   scroll-snap-align: start;

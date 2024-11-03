@@ -7,6 +7,7 @@ import AdvantagesSection from "@/components/AdvantagesSection.vue";
 import ServicesSection from "@/components/ServicesSection.vue";
 import ReviewsSection from "@/components/ReviewsSection.vue";
 import FormSection from "@/components/FormSection.vue";
+import ContactsSection from "@/components/ContactsSection.vue";
 import TheFooter from "@/components/TheFooter.vue";
 </script>
 
@@ -21,7 +22,7 @@ import TheFooter from "@/components/TheFooter.vue";
     <AdvantagesSection />
     <ServicesSection />
     <ReviewsSection />
-    <FormSection />
+    <FormSection /><ContactsSection />
   </main>
   <TheFooter />
 </template>
