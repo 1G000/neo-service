@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: "Unbounded", sans-serif;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffac12;
+  border-radius: 2px;
+}
+
+.sw-app-body {
+  width: 1254px !important;
+}
+
+.swiper-wrapper {
+  gap: 57px !important;
+  grid-template-columns: repeat(4, 268px) !important;
+}
+
+.sw-review-item {
+  border-radius: 36px !important;
+  padding: 25px !important;
+}
+
+.sw-review-bottom {
+  margin-top: 40px;
+}
+
+.sw-reviews-more {
+  width: 383px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffac12 !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: -0.4px !important;
+  border-bottom-left-radius: 32px !important;
+  border-top-right-radius: 32px !important;
+  transition: 0.5s !important;
+  color: #ffffff !important;
+}
+
+.sw-reviews-btn.sw-reviews-more {
+  border: none !important;
+}
+
+.sw-review-item-body-readmore {
+  color: #2b2d2e !important;
+  font-weight: bold !important;
+}
+
+@media (hover: hover) {
+  .sw-reviews-more:hover {
+    background-color: #2b2d2e !important;
+    color: #ffac12 !important;
+  }
+}
