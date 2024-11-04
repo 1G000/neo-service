@@ -4,21 +4,45 @@ import NavigationList from "./NavigationList.vue";
 import headerData from "@/assets/data/headerData.js";
 import UiContainer from "./UiContainer.vue";
 import UiButton from "./UiButton.vue";
-// import MobileBurger from './MobileBurger.vue'
+import { useWindowSizeShared } from "@/composables/useWindowSizeShared";
+import MobileBurger from "./MobileBurger.vue";
 
 const data = ref(headerData);
+const { width } = useWindowSizeShared();
+const animationClass = ref(false);
+const isVisible = ref(false);
+
+const openMobileMenu = () => {
+  animationClass.value = !animationClass.value;
+  isVisible.value = !isVisible.value;
+};
 </script>
 
 <template>
   <header class="header">
     <UiContainer class="header__wrapper">
       <UiButton href="/"><img src="../assets/logo.png" alt="logo" /></UiButton>
-      <div class="desktop-nav">
-        <NavigationList class="navigation" :navigation-list="data.navigation" />
-        <a class="header__button" :href="'tel:' + data.telephone">{{ data.telephone }}</a>
+      <div class="header__content">
+        <NavigationList
+          v-show="width > 1330"
+          class="navigation"
+          :navigation-list="data.navigation"
+        />
+        <UiButton class="header__button" :href="'tel:' + data.telephone">{{
+          data.telephone
+        }}</UiButton>
+        <MobileBurger
+          v-show="width <= 1330"
+          @click="openMobileMenu"
+          :animation="animationClass"
+        />
       </div>
-      <!-- <MobileBurger /> -->
-      <UiContainer class="navigation-mobile__wrapper">
+
+      <UiContainer
+        v-show="width <= 1330"
+        class="navigation-mobile__wrapper"
+        :class="{ navvis: isVisible }"
+      >
         <NavigationList class="navigation-mobile" :navigation-list="data.navigation" />
       </UiContainer>
     </UiContainer>
@@ -31,7 +55,7 @@ const data = ref(headerData);
   background-color: #131313;
   margin: 0 auto;
 }
-.desktop-nav {
+.header__content {
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -47,6 +71,11 @@ const data = ref(headerData);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1330px) {
+  .header__wrapper {
+    padding: 22px 32px;
+  }
 }
 .header__button {
   display: flex;
@@ -78,19 +107,26 @@ const data = ref(headerData);
   flex-direction: row;
   gap: 43px;
 }
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
   .navigation {
     display: none;
   }
-}
+} */
 .navigation-mobile__wrapper {
-  display: none;
-  /* position: absolute;
-  padding: 30px 60px;
-  background-color: #1b1f26f0;
-  top: 90px;
-  right: -231px;
-  z-index: 1; */
+  /* display: none; */
+  position: absolute;
+  padding: 60px 95px;
+  background-color: #131313;
+  top: 101px;
+  transform: translateX(500px);
+  z-index: 1;
+  right: -500px;
+  transition: all 0.7s ease-in-out;
+  border-bottom-left-radius: 115px;
+}
+.navvis {
+  right: 0;
+  transform: translateX(0);
 }
 .navigation-mobile {
   display: flex;

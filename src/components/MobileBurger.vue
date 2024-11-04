@@ -1,37 +1,42 @@
 <script setup>
-import { ref } from 'vue'
-const animationClass = ref(false)
+defineProps({
+  animation: {
+    type: Boolean,
+    required: true,
+  },
+});
 </script>
 
 <template>
-  <div class="menu-wrapper" @click="animationClass = !animationClass">
-    <div class="hamburger-menu" :class="{ animate: animationClass }"></div>
+  <div class="menu-wrapper">
+    <div class="hamburger-menu" :class="{ animate: animation }"></div>
   </div>
 </template>
 
 <style scoped>
 .menu-wrapper {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto; */
-  width: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* width: 50px; */
   height: 24px;
   cursor: pointer;
 }
-
-.hamburger-menu,
+.hamburger-menu {
+  width: 33px;
+  height: 4px;
+  cursor: pointer;
+  border-radius: 10px;
+}
 .hamburger-menu:after,
 .hamburger-menu:before {
-  width: 42px;
+  width: 43px;
   height: 4px;
+  border-radius: 10px;
 }
 
 .hamburger-menu {
   position: relative;
-  transform: translateY(25px);
+  transform: rotate(180deg);
   background: #fcad1b;
   transition: all 0ms 300ms;
 }
@@ -40,7 +45,7 @@ const animationClass = ref(false)
 }
 
 .hamburger-menu:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 15px;
@@ -50,7 +55,7 @@ const animationClass = ref(false)
 }
 
 .hamburger-menu:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 15px;
