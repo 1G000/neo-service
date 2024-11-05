@@ -1,8 +1,8 @@
 <script setup>
-import UiBlockTitle from "./UiBlockTitle.vue";
-import UiContainer from "./UiContainer.vue";
-import UiButton from "./UiButton.vue";
-import agreementsData from "@/assets/data/agreementsData";
+import UiBlockTitle from './UiBlockTitle.vue'
+import UiContainer from './UiContainer.vue'
+import UiButton from './UiButton.vue'
+import agreementsData from '@/assets/data/agreementsData'
 </script>
 
 <template>
@@ -57,7 +57,7 @@ import agreementsData from "@/assets/data/agreementsData";
   z-index: 1;
 }
 .agreements__content-right {
-  background-image: url("@/assets/agreements-img.jpg");
+  background-image: url('@/assets/agreements-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 44%;
@@ -66,7 +66,7 @@ import agreementsData from "@/assets/data/agreementsData";
 
 .agreements__content-left {
   padding-left: 150px;
-  width: 44%;
+  width: 47.1%;
   display: flex;
   flex-direction: column;
 }
@@ -91,6 +91,8 @@ import agreementsData from "@/assets/data/agreementsData";
   font-weight: 300;
   line-height: 32px;
   margin-bottom: 24px;
+  width: 100%;
+  max-width: 470px;
 }
 .agreements__button {
   display: flex;

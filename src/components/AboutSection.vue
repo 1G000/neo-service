@@ -65,7 +65,7 @@ import aboutData from '@/assets/data/aboutData'
 }
 
 .about__content-right {
-  width: 33%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   margin-top: -6px;
@@ -96,12 +96,14 @@ import aboutData from '@/assets/data/aboutData'
   text-align: left;
   line-height: 32px;
   margin-bottom: 6px;
+  width: 100%;
+  max-width: 500px;
 }
 .about__button {
   margin-top: 37px;
   display: flex;
   justify-content: center;
-  width: 111%;
+  width: 100%;
   padding: 30px 0px;
   background-color: #ffac12;
   font-size: 16px;

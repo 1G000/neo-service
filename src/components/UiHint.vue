@@ -32,10 +32,12 @@ import hintData from '@/assets/data/hintData'
   gap: 48px;
   padding: 40px 0;
   background-color: #131313;
+  background-image: url('@/assets/noise.png');
   border-top-right-radius: 24px;
   border-top-left-radius: 24px;
 }
 .hint__button {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -43,5 +45,34 @@ import hintData from '@/assets/data/hintData'
   align-items: center;
   color: #ffffff;
   cursor: pointer;
+}
+
+.hint__button:after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    #fff 50%,
+    rgba(255, 255, 255, 0.1)
+  );
+  content: '';
+  transition: width 0.3s ease-out;
+}
+
+.hint__button:hover:after,
+.hint__button:focus:after {
+  width: 95%;
+}
+
+@media (hover: hover) {
+  .hint__button:hover:after {
+    width: 95%;
+  }
 }
 </style>

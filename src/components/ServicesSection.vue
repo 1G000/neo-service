@@ -1,8 +1,8 @@
 <script setup>
-import UiBlockTitle from "./UiBlockTitle.vue";
-import UiContainer from "./UiContainer.vue";
-import UiButton from "./UiButton.vue";
-import servicesData from "@/assets/data/servicesData";
+import UiBlockTitle from './UiBlockTitle.vue'
+import UiContainer from './UiContainer.vue'
+import UiButton from './UiButton.vue'
+import servicesData from '@/assets/data/servicesData'
 </script>
 
 <template>
@@ -96,7 +96,7 @@ import servicesData from "@/assets/data/servicesData";
   border-top-right-radius: 24px;
 }
 .services__content {
-  max-width: 522px;
+  max-width: 1042px;
   padding: 81px 0px 20px 0px;
   align-self: center;
   display: flex;
@@ -115,6 +115,7 @@ import servicesData from "@/assets/data/servicesData";
   letter-spacing: -0.4px;
 }
 .services__button {
+  align-self: center;
   width: 381px;
   display: flex;
   justify-content: center;

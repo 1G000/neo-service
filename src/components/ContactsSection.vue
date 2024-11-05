@@ -1,8 +1,8 @@
 <script setup>
-import UiContainer from "./UiContainer.vue";
-import UiBlockTitle from "./UiBlockTitle.vue";
-import contactsData from "@/assets/data/contactsData";
-import UiSection from "./UiSection.vue";
+import UiContainer from './UiContainer.vue'
+import UiBlockTitle from './UiBlockTitle.vue'
+import contactsData from '@/assets/data/contactsData'
+import UiSection from './UiSection.vue'
 </script>
 
 <template>
@@ -11,9 +11,11 @@ import UiSection from "./UiSection.vue";
       <UiBlockTitle :width="'243px'" :title="'Контакты'" />
       <UiContainer class="contacts__contacts"
         ><h6 class="contacts__address">{{ contactsData.contacts.address }}</h6>
-        <a class="contacts__button" :href="'tel:' + contactsData.contacts.telephone">{{
-          contactsData.contacts.telephone
-        }}</a>
+        <a
+          class="contacts__button"
+          :href="'tel:' + contactsData.contacts.telephone"
+          >{{ contactsData.contacts.telephone }}</a
+        >
       </UiContainer>
     </UiContainer>
     <UiContainer class="contacts__map">
@@ -42,6 +44,7 @@ import UiSection from "./UiSection.vue";
 <style scoped>
 .contacts {
   background-color: #131313;
+  background-image: url('@/assets/noise.png');
 }
 .contacts__content {
   max-width: 1440px;

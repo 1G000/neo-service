@@ -1,6 +1,6 @@
 <script setup>
-import UiBlockTitle from "./UiBlockTitle.vue";
-import UiContainer from "./UiContainer.vue";
+import UiBlockTitle from './UiBlockTitle.vue'
+import UiContainer from './UiContainer.vue'
 </script>
 
 <template>
@@ -30,6 +30,7 @@ import UiContainer from "./UiContainer.vue";
   width: 100%;
   height: 40px;
   background-color: #131313;
+  background-image: url('@/assets/noise.png');
   position: relative;
   z-index: 100;
 }

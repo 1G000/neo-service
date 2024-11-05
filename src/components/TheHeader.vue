@@ -1,25 +1,32 @@
 <script setup>
-import { ref } from "vue";
-import NavigationList from "./NavigationList.vue";
-import headerData from "@/assets/data/headerData.js";
-import UiContainer from "./UiContainer.vue";
-import UiButton from "./UiButton.vue";
+import { ref } from 'vue'
+import NavigationList from './NavigationList.vue'
+import headerData from '@/assets/data/headerData.js'
+import UiContainer from './UiContainer.vue'
+import UiButton from './UiButton.vue'
 // import MobileBurger from './MobileBurger.vue'
 
-const data = ref(headerData);
+const data = ref(headerData)
 </script>
 
 <template>
   <header class="header">
     <UiContainer class="header__wrapper">
-      <UiButton href="/"><img src="../assets/logo.png" alt="logo" /></UiButton>
+      <UiButton href="/"
+        ><img src="../assets/logo.svg" class="logo" alt="logo"
+      /></UiButton>
       <div class="desktop-nav">
         <NavigationList class="navigation" :navigation-list="data.navigation" />
-        <a class="header__button" :href="'tel:' + data.telephone">{{ data.telephone }}</a>
+        <a class="header__button" :href="'tel:' + data.telephone">{{
+          data.telephone
+        }}</a>
       </div>
       <!-- <MobileBurger /> -->
       <UiContainer class="navigation-mobile__wrapper">
-        <NavigationList class="navigation-mobile" :navigation-list="data.navigation" />
+        <NavigationList
+          class="navigation-mobile"
+          :navigation-list="data.navigation"
+        />
       </UiContainer>
     </UiContainer>
   </header>
@@ -27,26 +34,34 @@ const data = ref(headerData);
 
 <style scoped>
 .header {
+  justify-content: space-between;
   height: 108px;
   background-color: #131313;
+  background-image: url('@/assets/noise.png');
   margin: 0 auto;
 }
+
+.logo {
+  width: 70px;
+}
+
 .desktop-nav {
   display: flex;
   flex-direction: row;
   gap: 40px;
   align-items: center;
 }
+
 .header__wrapper {
   position: relative;
   max-width: 1440px;
-  padding: 22px 100px;
+  height: 100%;
+  padding: 0px 100px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .header__button {
   display: flex;
@@ -121,7 +136,7 @@ const data = ref(headerData);
     #fff 50%,
     rgba(255, 255, 255, 0.1)
   );
-  content: "";
+  content: '';
   transition: width 0.3s ease-out;
 }
 

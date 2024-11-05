@@ -1,10 +1,10 @@
 <script setup>
-import UiContainer from "./UiContainer.vue";
-import NavigationList from "./NavigationList.vue";
-import UiButton from "./UiButton.vue";
-import UiBlockTitle from "./UiBlockTitle.vue";
-import UiHint from "./UiHint.vue";
-import footerData from "@/assets/data/footerData";
+import UiContainer from './UiContainer.vue'
+import NavigationList from './NavigationList.vue'
+import UiButton from './UiButton.vue'
+import UiBlockTitle from './UiBlockTitle.vue'
+import UiHint from './UiHint.vue'
+import footerData from '@/assets/data/footerData'
 </script>
 
 <template>
@@ -14,7 +14,9 @@ import footerData from "@/assets/data/footerData";
         <UiBlockTitle :width="'457px'" :title="''" />
       </UiContainer>
       <UiContainer class="footer__content">
-        <UiButton href="/"><img src="../assets/logo.png" alt="logo" /></UiButton>
+        <UiButton href="/"
+          ><img src="../assets/logo.svg" class="logo" alt="logo"
+        /></UiButton>
         <NavigationList
           class="footer__navigation"
           :navigation-list="footerData.footer.navigation"
@@ -31,7 +33,13 @@ import footerData from "@/assets/data/footerData";
 <style scoped>
 .footer {
   background-color: #131313;
+  background-image: url('@/assets/noise.png');
 }
+
+.logo {
+  width: 70px;
+}
+
 .footer__wrapper {
   max-width: 1440px;
   padding: 64px 100px 64px 100px;
@@ -80,7 +88,7 @@ import footerData from "@/assets/data/footerData";
     #fff 50%,
     rgba(255, 255, 255, 0.1)
   );
-  content: "";
+  content: '';
   transition: width 0.3s ease-out;
 }
 
