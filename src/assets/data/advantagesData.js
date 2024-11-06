@@ -3,38 +3,38 @@ export default {
     {
       key: 0,
       icon: new URL('@/assets/speed.png', import.meta.url).href,
-      value: 'Чиним за 3 дня то, что другие чинят неделями',
+      value: 'Починим за три дня то, что другие будут чинить неделями',
     },
     {
       key: 1,
       icon: new URL('@/assets/profi.png', import.meta.url).href,
-      value: 'Чиним все модели автомобильных брэндов',
+      value: 'Отремонтируем и обслужим любые автомобили всех марок',
     },
     {
       key: 2,
       icon: new URL('@/assets/guarantee.png', import.meta.url).href,
-      value: 'Даем гарантию на ремонт от полугода до трех лет',
+      value: 'Дадим гарантию на ремонт от полугода до трех лет',
     },
     {
       key: 3,
       icon: new URL('@/assets/repairs.png', import.meta.url).href,
       value:
-        'Беремся за работы любой сложности от замены масла до ремонта ходовой',
+        'Возьмемся за работы любой сложности от замены масла до ремонта ходовой',
     },
     {
       key: 4,
       icon: new URL('@/assets/agreement.png', import.meta.url).href,
-      value: 'Возможность заключения договоров на обслуживание',
+      value: 'Заключим договор на комплексное обслуживание автопарка',
     },
     {
       key: 5,
-      icon: new URL('@/assets/parking.png', import.meta.url).href,
-      value: 'Удобная парковочная зона',
+      icon: new URL('@/assets/relax.png', import.meta.url).href,
+      value: 'Расположим Вас в комфортной комнате ожидания',
     },
     {
       key: 6,
-      icon: new URL('@/assets/relax.png', import.meta.url).href,
-      value: 'Комфортная комната ожидания с телевизором, чаем и печеньками',
+      icon: new URL('@/assets/parking.png', import.meta.url).href,
+      value: 'Предоставим парковочные места',
     },
   ],
   lines: [

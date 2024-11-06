@@ -12,6 +12,9 @@ import agreementsData from '@/assets/data/agreementsData'
     </UiContainer>
     <UiContainer class="agreements__content">
       <UiContainer class="agreements__content-left">
+        <h4 class="agreements__content-title">
+          {{ agreementsData.agreements.title }}
+        </h4>
         <p
           v-for="text in agreementsData.agreements.texts"
           :key="text.key"
@@ -62,6 +65,14 @@ import agreementsData from '@/assets/data/agreementsData'
   background-size: cover;
   width: 44%;
   height: 481px;
+}
+
+.agreements__content-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  margin-bottom: 19px;
 }
 
 .agreements__content-left {
